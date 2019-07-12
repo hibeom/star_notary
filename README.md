@@ -6,6 +6,7 @@ star notary DAPP on Ethereum platform.
 - Using this app, it is possible to store your own star on ethereum contract storage, keep your own star with your own token, and buy, exchange, transfer stars registered in contract. 
   - ERC-721 Token Name : ustar
   - ERC-721 Token Symbol : uw
+  - Token Address on Rinkeby network : 0x64b3fdc6dacd2a178cadc97d58696ce8ee82e035
 - This project is a task in Udacity Blockchain Developer Nanodegree Program. 
 - This project is constructed based on truffle Webpack box. You can see Webpack [here](https://www.trufflesuite.com/boxes/webpack).
 
@@ -61,6 +62,15 @@ http://localhost:8080
 
 You can deploy starNotary contract on Ethereum testnet environment.
  - before using the service, you have to have your account on rinkeby network. The best way to generate account and use service is via using metamask.
+ - In addition, you have to modify truffle-config.js.
+```
+//in truffle-config.js
+const infuraKey = "your Infura Project ID";
+const mnemonic = 'your rinkbey private key';
+```
+```
+npm install --save truffle-hdwallet-provider
+```
 ```
 truffle migrate --reset --network rinkeby
 ```
