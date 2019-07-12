@@ -13,6 +13,7 @@ star notary DAPP on Ethereum platform.
 
 - node.js v10.15.3
 - truffle v5.0.26
+- metamask v6.7.2
 
 #### At windows OS
 You may have to install 'window-build-tools' to build this project on Windows OS.
@@ -26,7 +27,11 @@ If it doesn't work, please refer to [here](https://github.com/nodejs/node-gyp).
 
 ### Installing
 
-
+modules that you have to install are saved on package.json
+So, what you need to do is
+```
+npm install
+```
 
 ## Running the tests
 
@@ -52,17 +57,13 @@ Finally, you can use the starNotary test service on browser.
 http://localhost:8080
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+You can deploy starNotary contract on Ethereum testnet environment.
+ - before using the service, you have to have your account on rinkeby network. The best way to generate account and use service is via using metamask.
+```
+truffle migrate --reset --network rinkeby
+```
 
 ## Built With
 
